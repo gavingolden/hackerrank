@@ -1,19 +1,13 @@
 package hackerrank.algorithms
 
-import hackerrank.util.logger
-import org.slf4j.Logger
 import java.util.*
-
-class SimpleArraySum
-
-private val logger: Logger = SimpleArraySum().logger()
 
 /*
  * Complete the simpleArraySum function below.
  */
 fun simpleArraySum(ar: Array<Int>): Int {
     return ar.reduce {previousSum, currentValue ->
-        logger.info("Adding $previousSum and $currentValue")
+        println("Adding $previousSum and $currentValue")
         previousSum + currentValue
     }
 }
